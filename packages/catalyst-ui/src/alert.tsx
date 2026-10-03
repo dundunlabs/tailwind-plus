@@ -50,7 +50,7 @@ export function Alert({
   )
 }
 
-export function AlertTitle({
+Alert.Title = function AlertTitle({
   className,
   ...props
 }: { className?: string } & Omit<Headless.DialogTitleProps, 'as' | 'className'>) {
@@ -65,7 +65,7 @@ export function AlertTitle({
   )
 }
 
-export function AlertDescription({
+Alert.Description = function AlertDescription({
   className,
   ...props
 }: { className?: string } & Omit<Headless.DescriptionProps<typeof Text>, 'as' | 'className'>) {
@@ -78,11 +78,11 @@ export function AlertDescription({
   )
 }
 
-export function AlertBody({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
+Alert.Body = function AlertBody({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
   return <div {...props} className={clsx(className, 'mt-4')} />
 }
 
-export function AlertActions({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
+Alert.Actions = function AlertActions({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
   return (
     <div
       {...props}
