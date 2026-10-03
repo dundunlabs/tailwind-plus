@@ -19,6 +19,6 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           registry-url: https://registry.npmjs.org/
-      - run: pnpm --filter @dundunlabs/catalyst-ui publish --no-git-checks --access public
+      - run: pnpm --filter @dundunlabs/catalyst-ui publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
