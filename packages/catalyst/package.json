@@ -1,6 +1,6 @@
 {
-  "name": "@dundunlabs/catalyst-ui",
-  "version": "0.0.1",
+  "name": "@dundunlabs/catalyst",
+  "version": "0.0.0",
   "type": "module",
   "exports": {
     ".": {

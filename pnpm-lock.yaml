@@ -166,7 +166,7 @@ importers:
 
   .: {}
 
-  packages/catalyst-ui:
+  packages/catalyst:
     dependencies:
       clsx:
         specifier: ^2.1.1
