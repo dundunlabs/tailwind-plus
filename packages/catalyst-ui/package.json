@@ -1,0 +1,53 @@
+{
+  "name": "@dundunlabs/catalyst-ui",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib",
+    "dev": "rslib --watch",
+    "lint": "rslint",
+    "test": "rstest",
+    "test:watch": "rstest --watch"
+  },
+  "devDependencies": {
+    "@headlessui/react": "^2.2.10",
+    "@rsbuild/plugin-react": "^2.1.1",
+    "@rslib/core": "^1.0.3",
+    "@rslint/core": "^0.9.0",
+    "@rstest/adapter-rslib": "^0.12.2",
+    "@rstest/core": "^0.12.2",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.19.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "happy-dom": "^20.14.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "@headlessui/react": "^2.2.10",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": true,
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "motion": "^13.5.0"
+  }
+}
